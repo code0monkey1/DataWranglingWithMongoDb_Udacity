@@ -13,6 +13,7 @@ def parse_file(datafile):
     max_val = max(cv)
     min_val = min(cv)
     avj_val = sum(cv) / len(sheet_data)
+
     max_time = xlrd.xldate_as_tuple(sheet.cell_value(cv.index(max_val)+1, 0), 0)
     min_time = xlrd.xldate_as_tuple(sheet.cell_value(cv.index(min_val)+1, 0), 0)
 
